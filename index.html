@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2 Expedition | Parallax Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero" id="heroScene">
+        <div class="layer" data-speed="0.05" style="background: linear-gradient(180deg, #0a0e27 0%, #1a1f3f 25%, #2d3a5f 50%, #3a5a8a 75%, #5a8ac4 100%); z-index: 1;"></div>
+
+        <div class="layer layer-aurora" data-speed="0.12" style="z-index: 2;">
+            <div class="aurora aurora-1"></div>
+            <div class="aurora aurora-2"></div>
+        </div>
+
+        <div class="layer layer-stars" data-speed="0.15" style="z-index: 2.5;">
+            <div class="star star-1" style="top: 8%; left: 12%;"></div>
+            <div class="star star-2" style="top: 18%; left: 68%;"></div>
+            <div class="star star-1" style="top: 12%; left: 82%;"></div>
+            <div class="star star-3" style="top: 22%; left: 35%;"></div>
+            <div class="star star-2" style="top: 28%; left: 88%;"></div>
+            <div class="star star-1" style="top: 35%; left: 25%;"></div>
+            <div class="star star-3" style="top: 42%; left: 78%;"></div>
+            <div class="star star-1" style="top: 15%; left: 48%;"></div>
+        </div>
+
+        <div class="layer layer-cloud-veil" data-speed="0.18" style="z-index: 3;"></div>
+
+        <div class="layer" data-speed="0.22" style="z-index: 4;">
+            <svg width="100%" height="100%" viewBox="0 0 1200 600" preserveAspectRatio="none" style="display: block;">
+                <defs>
+                    <linearGradient id="distantMtnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1a2d4a;stop-opacity:0.4" />
+                        <stop offset="100%" style="stop-color:#0d1f35;stop-opacity:0.8" />
+                    </linearGradient>
+                </defs>
+                <polygon points="0,380 200,140 400,320 650,80 900,350 1100,120 1200,380 1200,600 0,600" fill="url(#distantMtnGrad)"/>
+            </svg>
+        </div>
+
+        <div class="layer" data-speed="0.35" style="z-index: 5;">
+            <svg width="100%" height="100%" viewBox="0 0 1200 600" preserveAspectRatio="none" style="display: block;">
+                <defs>
+                    <linearGradient id="midMtnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#2a4570;stop-opacity:0.6" />
+                        <stop offset="70%" style="stop-color:#1f3a55;stop-opacity:0.7" />
+                        <stop offset="100%" style="stop-color:#162740;stop-opacity:0.9" />
+                    </linearGradient>
+                </defs>
+                <polygon points="0,420 150,200 320,380 520,150 750,390 950,180 1100,410 1200,220 1200,600 0,600" fill="url(#midMtnGrad)"/>
+            </svg>
+        </div>
+
+        <div class="layer layer-snow-peaks" data-speed="0.32" style="z-index: 5.5;">
+            <svg width="100%" height="100%" viewBox="0 0 1200 600" preserveAspectRatio="none" style="display: block;">
+                <defs>
+                    <linearGradient id="snowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+                        <stop offset="30%" style="stop-color:#e8f0f8;stop-opacity:0.5" />
+                        <stop offset="100%" style="stop-color:#d0dce8;stop-opacity:0" />
+                    </linearGradient>
+                </defs>
+                <polygon points="150,200 320,280 150,330" fill="url(#snowGrad)"/>
+                <polygon points="520,150 650,240 520,310" fill="url(#snowGrad)"/>
+                <polygon points="950,180 1050,270 950,340" fill="url(#snowGrad)"/>
+            </svg>
+        </div>
+
+        <div class="layer layer-clouds" data-speed="0.28" style="z-index: 6;">
+            <div class="cloud cloud-lg" style="top: 15%; left: 5%;"></div>
+            <div class="cloud cloud-md" style="top: 30%; left: 55%;"></div>
+            <div class="cloud cloud-lg" style="top: 10%; right: 8%;"></div>
+            <div class="cloud cloud-sm" style="top: 45%; left: 35%;"></div>
+        </div>
+
+        <div class="layer layer-ridge" data-speed="0.48" style="z-index: 7;">
+            <svg width="100%" height="100%" viewBox="0 0 1200 600" preserveAspectRatio="none" style="display: block;">
+                <defs>
+                    <linearGradient id="ridgeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#3a6a94;stop-opacity:0.8" />
+                        <stop offset="100%" style="stop-color:#1f3f55;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <polygon points="0,480 100,320 250,450 420,310 600,420 800,300 950,440 1080,320 1200,400 1200,600 0,600" fill="url(#ridgeGrad)"/>
+            </svg>
+        </div>
+
+        <div class="layer layer-rocks" data-speed="0.65" style="z-index: 8;">
+            <svg width="100%" height="100%" viewBox="0 0 1200 600" preserveAspectRatio="none" style="display: block;">
+                <defs>
+                    <linearGradient id="rockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#5a8ac4;stop-opacity:0.7" />
+                        <stop offset="100%" style="stop-color:#2a4a74;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <polygon points="0,520 80,450 180,500 280,440 380,510 480,460 580,520 680,470 780,530 880,480 980,540 1080,490 1200,520 1200,600 0,600" fill="url(#rockGrad)"/>
+                <circle cx="120" cy="490" r="45" fill="#4a7aaa" opacity="0.85"/>
+                <circle cx="380" cy="510" r="60" fill="#3a6a94" opacity="0.9"/>
+                <circle cx="780" cy="500" r="55" fill="#4a7aaa" opacity="0.85"/>
+                <circle cx="1050" cy="520" r="70" fill="#3a6a94" opacity="0.9"/>
+            </svg>
+        </div>
+
+        <div class="layer layer-particles" data-speed="0.42" style="z-index: 9; pointer-events: none;">
+            <div class="particle" style="top: 8%; left: 8%;"></div>
+            <div class="particle" style="top: 15%; left: 25%;"></div>
+            <div class="particle" style="top: 22%; left: 42%;"></div>
+            <div class="particle" style="top: 12%; left: 62%;"></div>
+            <div class="particle" style="top: 18%; left: 80%;"></div>
+            <div class="particle" style="top: 28%; left: 15%;"></div>
+            <div class="particle" style="top: 35%; left: 72%;"></div>
+            <div class="particle" style="top: 20%; left: 48%;"></div>
+            <div class="particle" style="top: 38%; left: 35%;"></div>
+        </div>
+
+        <div class="layer layer-mist" data-speed="0.75" style="z-index: 10;"></div>
+
+        <div class="hero-content">
+            <div class="content-wrapper">
+                <h1 class="hero-title">K2 EXPEDITION</h1>
+                <p class="hero-subtitle">Journey Through Depth and Altitude</p>
+                <p class="hero-description">Experience the savage mountain through parallax scrolling</p>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section content-1">
+        <div class="content-container">
+            <div class="section-number">01</div>
+            <h2>The Savage Mountain</h2>
+            <p>K2 rises 8,611 meters above sea level, standing as a testament to Earth's raw power and beauty. Known as the "Savage Mountain," it demands uncompromising respect. Unlike its taller neighbor Everest, K2 presents technical challenges at every elevation band, with unpredictable weather patterns and steep, exposed rock faces that test even the most seasoned alpinists.</p>
+            <p>Every expedition to K2 is a calculated risk—a journey through extreme conditions where preparation, skill, and psychological resilience merge into a singular purpose: reaching the summit.</p>
+        </div>
+    </section>
+
+    <section class="content-section content-2">
+        <div class="content-container">
+            <div class="section-number">02</div>
+            <h2>The Beauty of Perspective</h2>
+            <p>Visual depth captivates the human eye. When objects move at different speeds relative to our viewpoint, our brain interprets this as three-dimensional space. This fundamental principle of perception, when applied to digital design, creates immersive experiences that transcend the flat screen.</p>
+            <p>Each layer in this experience moves with mathematical precision, creating a cohesive visual journey. The interplay between elements moving at different velocities produces an illusion of depth that engages the viewer's natural perception of space and distance.</p>
+        </div>
+    </section>
+
+    <section class="content-section content-3">
+        <div class="content-container">
+            <div class="section-number">03</div>
+            <h2>Mastering Motion</h2>
+            <p>True visual excellence emerges from meticulous attention to detail. Every transition, every pixel movement, every layer velocity has been calibrated to create a seamless experience. The result is motion that feels natural, responsive, and intentional.</p>
+            <p>When executed with precision, parallax design becomes more than a visual effect—it becomes a communication tool. It guides the viewer's attention, reinforces hierarchy, and creates a memorable impression that elevates the entire experience.</p>
+        </div>
+    </section>
+
+    <section class="content-section content-4">
+        <div class="content-container">
+            <div class="section-number">04</div>
+            <h2>The Summit Experience</h2>
+            <p>Standing at the peak of visual and interactive design requires dedication to craft. This experience has been built with attention to performance, accessibility, and aesthetic excellence. Every element serves a purpose in the greater narrative.</p>
+            <p>From the atmospheric aurora effects to the anchored foreground elements, each component contributes to a cohesive whole. This is what happens when artistic vision meets technical expertise: an experience worthy of exploration and admiration.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>K2 Expedition</h3>
+                <p>An immersive parallax experience crafted with precision and passion.</p>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Designed and developed with meticulous attention to visual excellence and user experience.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Experience the mountain. Explore the altitude. Discover the depth.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 K2 Expedition | A Parallax Journey</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" class="back-to-top" title="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
